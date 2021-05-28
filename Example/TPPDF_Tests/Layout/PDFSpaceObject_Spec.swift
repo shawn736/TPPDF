@@ -90,7 +90,7 @@ class PDFSpaceObject_Spec: QuickSpec {
                         let _ = try object.calculate(generator: generator, container: container)
                         try object.draw(generator: generator, container: container)
 
-                        return nil
+                        return
                         }.toNot(throwError())
 
                     let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -133,7 +133,7 @@ class PDFSpaceObject_Spec: QuickSpec {
                         let _ = try object.calculate(generator: generator, container: container)
                         try object.draw(generator: generator, container: container)
 
-                        return nil
+                        return 
                         }.toNot(throwError())
 
                     let image = UIGraphicsGetImageFromCurrentImageContext()

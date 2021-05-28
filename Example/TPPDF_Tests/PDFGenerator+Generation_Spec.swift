@@ -26,7 +26,7 @@ class PDFGenerator_Generation_Spec: QuickSpec {
                         var url: URL!
                         expect {
                             url = try PDFGenerator(document: document).generateURL(filename: filename)
-                            return nil
+                            return
                             }.toNot(throwError())
                         expect(url).toEventuallyNot(beNil())
 
@@ -47,7 +47,7 @@ class PDFGenerator_Generation_Spec: QuickSpec {
                         var url: URL!
                         expect {
                             url = try PDFGenerator(document: document).generateURL(filename: filename)
-                            return nil
+                            return
                             }.toNot(throwError())
                         expect(url).toEventuallyNot(beNil())
 
@@ -68,7 +68,7 @@ class PDFGenerator_Generation_Spec: QuickSpec {
                         var url: URL!
                         expect {
                             url = try PDFGenerator(document: document).generateURL(filename: filename)
-                            return nil
+                            return
                             }.toNot(throwError())
                         expect(url).toEventuallyNot(beNil())
 
@@ -92,7 +92,7 @@ class PDFGenerator_Generation_Spec: QuickSpec {
                         var data: Data!
                         expect {
                             data = try PDFGenerator(document: document).generateData()
-                            return nil
+                            return
                             }.toNot(throwError())
                         expect(data).toEventuallyNot(beNil())
                         //                        let expectedBase64 = ""
@@ -106,7 +106,7 @@ class PDFGenerator_Generation_Spec: QuickSpec {
                         var data: Data!
                         expect {
                             data = try PDFGenerator(document: document).generateData()
-                            return nil
+                            return 
                             }.toNot(throwError())
                         expect(data).toEventuallyNot(beNil())
                         //                        let expectedBase64 = ""
